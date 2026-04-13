@@ -1,69 +1,11 @@
-# AIcenna — Ishga Tushirish
+AIcenna — virtual reallikka asoslangan 3D o‘quv platformasi
 
-## Kerakli narsalar
-- Node.js 18+
-- Chrome yoki Edge (MediaPipe uchun)
-- Kamera
-- OpenAI API kalit → https://platform.openai.com/api-keys
+AIcenna — bu zamonaviy ta’lim tizimidagi muammolarni hal qilishga qaratilgan, virtual reallik (VR) va 3D texnologiyalar asosida yaratilgan innovatsion o‘quv platforma. Loyiha o‘quvchilarga nazariy bilimlarni amaliy tajriba bilan uyg‘unlashtirish imkonini beradi, ayniqsa laboratoriya, xavfsizlik va jihozlar bilan bog‘liq muammolarni samarali bartaraf etadi.
 
-## O'rnatish
+Platforma kimyo, fizika, biologiya va astronomiya kabi fanlarni interaktiv va vizual tarzda o‘rganish imkonini beradi. Shu bilan birga, tibbiyot yo‘nalishida ham keng qo‘llanilib, anatomiya, fiziologiya, jarrohlik va diagnostika fanlari bo‘yicha real simulyatsiyalar orqali talabalarga xatolarsiz tajriba orttirish imkonini yaratadi.
 
-```bash
-# 1. Papkaga kiring
-cd holomed
+AIcenna’ning asosiy ustunliklari — 3D vizualizatsiya, animatsiyalar, ovozli yordamchi, amaliy mashg‘ulotlar va turli qurilmalarda (smart doska, noutbuk, planshet) ishlash imkoniyatidir. Platforma o‘qitish samaradorligini oshirib, bilimni o‘zlashtirish darajasini sezilarli yaxshilaydi.
 
-# 2. Kutubxonalarni o'rnating
-npm install
+Loyiha maktablar, oliy ta’lim muassasalari va individual foydalanuvchilar uchun mo‘ljallangan bo‘lib, moslashuvchan monetizatsiya modeli orqali keng joriy etilishi rejalashtirilgan. Beta bosqichdan so‘ng platformani ta’lim tizimiga bosqichma-bosqich integratsiya qilish ko‘zda tutilgan.
 
-# 3. .env.local fayl yarating
-echo "VITE_OPENAI_KEY=sk-SIZNING_OPENAI_KALITINGIZ" > .env.local
-
-# 4. Ishga tushiring
-npm run dev
-```
-
-## Brauzerda oching
-http://localhost:5173
-
----
-
-## Yangi model qo'shish
-
-1. `.glb` faylni `public/models/` ga joylashtiring
-2. `src/config/models.js` ga yangi yozuv qo'shing:
-
-```js
-{
-  id: 'heart',           // unique id
-  label: 'Yurak',        // O'zbek nomi
-  labelEn: 'Heart',
-  file: '/models/heart.glb',
-  icon: '❤️',
-  scale: 2.0,
-  position: [0, 0, 0],
-  parts: {
-    left_ventricle:  { label: 'Chap qorincha', color: 0xff4444 },
-    right_ventricle: { label: 'O\'ng qorincha', color: 0xff6666 },
-  },
-  aiContext: "Bu yurak anatomiyasi modeli...",
-}
-```
-
-Hammasi shu! Boshqa hech narsani o'zgartirish shart emas.
-
----
-
-## Qo'l Harakatlari
-
-| Harakat | Natija |
-|---|---|
-| ✋ Kaft yoying + harakatlaning | Aylantirish |
-| ✊ Mushtlab harakatlaning | Aylantirish (aniq) |
-| 🤏 Ikki barmoq yaqinlashsa | Zoom in |
-| ☝️ Ko'rsatkich barmoq | Organ tanlash |
-| 🔄 Ikkala kaft | Reset |
-
-## Ovoz buyruqlari (O'zbek tilida)
-- "Frontal lob nima vazifa bajaradi?"
-- "Miyacha qayerda joylashgan?"
-- "Yurak nechanchi marta uradi?"
+AIcenna — bu kelajak ta’limi: xavfsiz, interaktiv va maksimal darajada samarali.
