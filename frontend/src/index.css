@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800;14..32,900&family=Space+Grotesk:wght@400;500;600;700;800&display=swap');
+
+/* ══ DESIGN TOKENS ══════════════════════════════════════════ */
+:root {
+  --font:   'Inter', system-ui, sans-serif;
+  --font-d: 'Space Grotesk', 'Inter', sans-serif;
+  --bg:     #ffffff;
+  --surf:   #ffffff;
+  --surf2:  #f8fafc;
+  --surf3:  #f1f5f9;
+  --brd:    #cbd5e1;
+  --brd2:   #94a3b8;
+  --brd-a:  rgba(6,182,212,.6);
+  --t1:     #0f172a;
+  --t2:     #334155;
+  --t3:     #64748b;
+  --acc:    #06b6d4;
+  --acc2:   #6366f1;
+  --acc3:   #8b5cf6;
+  --ok:     #059669;
+  --ok-bg:  #d1fae5;
+  --ok-b:   #6ee7b7;
+  --er:     #dc2626;
+  --er-bg:  #fee2e2;
+  --er-b:   #fca5a5;
+  --wa:     #d97706;
+  --wa-bg:  #fef3c7;
+  --wa-b:   #fcd34d;
+  --sh:     0 1px 4px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.05);
+  --sh-md:  0 4px 20px rgba(0,0,0,.1);
+  --sh-lg:  0 10px 40px rgba(0,0,0,.12);
+  --sh-acc: 0 4px 28px rgba(6,182,212,.25);
+  --nav:    rgba(255,255,255,.96);
+  --r:      14px;
+}
+[data-theme="dark"] {
+  --bg:     #050c18;
+  --surf:   rgba(8,18,42,.92);
+  --surf2:  rgba(6,14,32,.80);
+  --surf3:  rgba(10,20,44,.70);
+  --brd:    rgba(6,182,212,.22);
+  --brd2:   rgba(6,182,212,.38);
+  --brd-a:  rgba(6,182,212,.70);
+  --t1:     #f0f6ff;
+  --t2:     #a8c4e0;
+  --t3:     #5a7499;
+  --acc:    #06b6d4;
+  --acc2:   #818cf8;
+  --acc3:   #a78bfa;
+  --ok:     #34d399;
+  --ok-bg:  rgba(52,211,153,.14);
+  --ok-b:   rgba(52,211,153,.38);
+  --er:     #fb7185;
+  --er-bg:  rgba(251,113,133,.14);
+  --er-b:   rgba(251,113,133,.38);
+  --wa:     #fbbf24;
+  --wa-bg:  rgba(251,191,36,.14);
+  --wa-b:   rgba(251,191,36,.38);
+  --sh:     0 1px 3px rgba(0,0,0,.6);
+  --sh-md:  0 4px 24px rgba(0,0,0,.55);
+  --sh-lg:  0 10px 44px rgba(0,0,0,.65);
+  --sh-acc: 0 4px 32px rgba(6,182,212,.25);
+  --nav:    rgba(5,12,24,.94);
+}
+
+/* ══ BASE ═══════════════════════════════════════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font);background:var(--bg);color:var(--t1);min-height:100vh;overflow-x:hidden;-webkit-font-smoothing:antialiased;transition:background .35s,color .35s}
+h1,h2,h3,h4{font-family:var(--font-d);letter-spacing:-.02em}
+::-webkit-scrollbar{width:5px}
+::-webkit-scrollbar-thumb{background:rgba(100,116,139,.3);border-radius:4px}
+
+/* ══ KEYFRAMES ══════════════════════════════════════════════ */
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes su{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes sl{from{opacity:0;transform:translateX(-18px)}to{opacity:1;transform:translateX(0)}}
+@keyframes fd{from{opacity:0}to{opacity:1}}
+@keyframes pop{0%{opacity:0;transform:scale(.9)}60%{transform:scale(1.03)}100%{opacity:1;transform:scale(1)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes btn-glow{0%,100%{box-shadow:0 4px 20px rgba(6,182,212,.3)}50%{box-shadow:0 6px 36px rgba(6,182,212,.55)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+@keyframes orbit-cw{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes orbit-ccw{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+
+/* ══ ANIMATION CLASSES ══════════════════════════════════════ */
+.a-su{animation:su .5s cubic-bezier(.22,.68,0,1.2) both}
+.a-sl{animation:sl .45s cubic-bezier(.22,.68,0,1.2) both}
+.a-fd{animation:fd .4s ease both}
+.a-pop{animation:pop .4s cubic-bezier(.22,.68,0,1.2) both}
+.a-float{animation:float 4s ease-in-out infinite}
+.a-spin{animation:spin 1s linear infinite}
+.d0{animation-delay:0s}.d1{animation-delay:.07s}.d2{animation-delay:.14s}.d3{animation-delay:.21s}
+.d4{animation-delay:.28s}.d5{animation-delay:.36s}.d6{animation-delay:.45s}.d7{animation-delay:.55s}
+
+/* ══ NAVBAR ══════════════════════════════════════════════════ */
+.navbar{position:sticky;top:0;z-index:200;height:64px;background:var(--nav);border-bottom:1px solid var(--brd);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px);transition:background .35s,border-color .35s}
+.nav-wrap{max-width:1320px;margin:0 auto;height:100%;padding:0 28px;display:flex;align-items:center;justify-content:space-between}
+.nav-link{font-size:13.5px;font-weight:500;color:var(--t2);padding:7px 14px;border-radius:8px;background:none;border:none;cursor:pointer;transition:color .2s,background .2s;font-family:var(--font)}
+.nav-link:hover{color:var(--t1);background:var(--surf2)}
+.nav-link.on{color:var(--acc);background:rgba(6,182,212,.09);font-weight:600}
+
+/* ══ BUTTONS ═════════════════════════════════════════════════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-weight:600;cursor:pointer;border:none;border-radius:10px;transition:all .22s;text-decoration:none;white-space:nowrap}
+.btn span{display:inline-flex;align-items:center;gap:8px}
+.btn-p{background:linear-gradient(135deg,#06b6d4,#6366f1);color:#fff;font-size:14px;padding:11px 26px;animation:btn-glow 2.5s ease-in-out infinite;position:relative;overflow:hidden}
+.btn-p::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#22d3ee,#8b5cf6);opacity:0;transition:opacity .3s}
+.btn-p:hover::before{opacity:1}
+.btn-p:hover{transform:translateY(-1px)}
+.btn-p:disabled{opacity:.5;cursor:not-allowed;animation:none}
+
+/* ══ TOGGLE ══════════════════════════════════════════════════ */
+.tgl{width:44px;height:26px;border-radius:13px;background:var(--surf2);border:1px solid var(--brd);cursor:pointer;position:relative;transition:all .25s;padding:0;flex-shrink:0}
+.tgl-k{position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--acc);display:flex;align-items:center;justify-content:center;font-size:10px;transition:transform .25s}
+[data-theme="dark"] .tgl-k{transform:translateX(18px)}
+
+/* ══ CONTAINER ═══════════════════════════════════════════════ */
+.container{max-width:1320px;margin:0 auto;padding:0 28px}
+
+/* ══ CARDS ═══════════════════════════════════════════════════ */
+.card{border-radius:16px;background:var(--surf);border:1px solid var(--brd);transition:transform .2s,border-color .2s,box-shadow .2s}
+
+/* ══ MODAL ═══════════════════════════════════════════════════ */
+.doc-modal{position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:24px}
+.doc-box{width:100%;max-width:1100px;height:90vh;background:var(--surf);border:1px solid var(--brd);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 32px 80px rgba(0,0,0,.5)}
+.doc-head{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--brd);background:var(--surf);flex-shrink:0;gap:12px}

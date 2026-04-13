@@ -1,0 +1,10 @@
+ngrok http 5174
+
+
+npm run dev
+
+
+npm start
+frontend
+
+
