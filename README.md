@@ -1,4 +1,4 @@
-# HoloMed 3D — Ishga Tushirish
+# AIcenna — Ishga Tushirish
 
 ## Kerakli narsalar
 - Node.js 18+
