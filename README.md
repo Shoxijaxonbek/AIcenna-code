@@ -1,3 +1,4 @@
+National AI hackathon🥈
 AIcenna — virtual reallikka asoslangan 3D o‘quv platformasi
 
 AIcenna — bu zamonaviy ta’lim tizimidagi muammolarni hal qilishga qaratilgan, virtual reallik (VR) va 3D texnologiyalar asosida yaratilgan innovatsion o‘quv platforma. Loyiha o‘quvchilarga nazariy bilimlarni amaliy tajriba bilan uyg‘unlashtirish imkonini beradi, ayniqsa laboratoriya, xavfsizlik va jihozlar bilan bog‘liq muammolarni samarali bartaraf etadi.
