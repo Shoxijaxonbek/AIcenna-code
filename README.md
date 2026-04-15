@@ -11,3 +11,5 @@ AIcenna’ning asosiy ustunliklari — 3D vizualizatsiya, animatsiyalar, ovozli 
 Loyiha maktablar, oliy ta’lim muassasalari va individual foydalanuvchilar uchun mo‘ljallangan bo‘lib, moslashuvchan monetizatsiya modeli orqali keng joriy etilishi rejalashtirilgan. Beta bosqichdan so‘ng platformani ta’lim tizimiga bosqichma-bosqich integratsiya qilish ko‘zda tutilgan.
 
 AIcenna — bu kelajak ta’limi: xavfsiz, interaktiv va maksimal darajada samarali.
+
+https://gov.uz/oz/digital/news/view/153647
