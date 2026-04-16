@@ -1,15 +1,15 @@
-National AI hackathon🥈
+2nd place in National AI hackathon🦾
 
-AIcenna — virtual reallikka asoslangan 3D o‘quv platformasi
+AIcenna — A 3D Educational Platform Based on Virtual Reality
 
-AIcenna — bu zamonaviy ta’lim tizimidagi muammolarni hal qilishga qaratilgan, virtual reallik (VR) va 3D texnologiyalar asosida yaratilgan innovatsion o‘quv platforma. Loyiha o‘quvchilarga nazariy bilimlarni amaliy tajriba bilan uyg‘unlashtirish imkonini beradi, ayniqsa laboratoriya, xavfsizlik va jihozlar bilan bog‘liq muammolarni samarali bartaraf etadi.
+AIcenna is an innovative educational platform built on virtual reality (VR) and 3D technologies, aimed at solving the challenges of the modern education system. The project enables students to combine theoretical knowledge with practical experience, effectively addressing issues related to laboratories, safety, and equipment.
 
-Platforma kimyo, fizika, biologiya va astronomiya kabi fanlarni interaktiv va vizual tarzda o‘rganish imkonini beradi. Shu bilan birga, tibbiyot yo‘nalishida ham keng qo‘llanilib, anatomiya, fiziologiya, jarrohlik va diagnostika fanlari bo‘yicha real simulyatsiyalar orqali talabalarga xatolarsiz tajriba orttirish imkonini yaratadi.
+The platform allows for the interactive and visual study of subjects such as chemistry, physics, biology, and astronomy. Additionally, it is widely applicable in the medical field, offering students error-free experience through realistic simulations in anatomy, physiology, surgery, and diagnostics.
 
-AIcenna’ning asosiy ustunliklari — 3D vizualizatsiya, animatsiyalar, ovozli yordamchi, amaliy mashg‘ulotlar va turli qurilmalarda (smart doska, noutbuk, planshet) ishlash imkoniyatidir. Platforma o‘qitish samaradorligini oshirib, bilimni o‘zlashtirish darajasini sezilarli yaxshilaydi.
+Key advantages of AIcenna include 3D visualization, animations, voice assistance, practical exercises, and compatibility with various devices (smartboards, laptops, tablets). The platform enhances teaching efficiency and significantly improves knowledge retention.
 
-Loyiha maktablar, oliy ta’lim muassasalari va individual foydalanuvchilar uchun mo‘ljallangan bo‘lib, moslashuvchan monetizatsiya modeli orqali keng joriy etilishi rejalashtirilgan. Beta bosqichdan so‘ng platformani ta’lim tizimiga bosqichma-bosqich integratsiya qilish ko‘zda tutilgan.
+The project is designed for schools, higher education institutions, and individual users, with plans for widespread adoption through a flexible monetization model. After the beta phase, gradual integration into the education system is envisioned.
 
-AIcenna — bu kelajak ta’limi: xavfsiz, interaktiv va maksimal darajada samarali.
+AIcenna — the future of education: safe, interactive, and maximally effective.
 
 https://gov.uz/oz/digital/news/view/153647
