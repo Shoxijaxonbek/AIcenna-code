@@ -1,4 +1,4 @@
-2nd place in National AI hackathon🦾
+2nd place in National AI hackathon🦾🥈
 
 AIcenna — A 3D Educational Platform Based on Virtual Reality
 
